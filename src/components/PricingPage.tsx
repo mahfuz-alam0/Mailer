@@ -99,17 +99,9 @@ function PricingPage({ onNavigate }: PricingPageProps) {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
             Simple, Transparent Pricing
           </h1>
-          <p className="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto mb-6">
+          <p className="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto">
             Choose the perfect plan for your email needs. Monthly subscriptions with volume discounts. No hidden fees, cancel anytime.
           </p>
-          <div className="flex justify-center gap-4 text-sm">
-            <button onClick={() => onNavigate('refund')} className="text-blue-400 hover:text-blue-300 underline">
-              Refund Policy
-            </button>
-            <button onClick={() => onNavigate('terms')} className="text-blue-400 hover:text-blue-300 underline">
-              Terms & Conditions
-            </button>
-          </div>
         </div>
 
         <div className="mb-16 lg:mb-20 max-w-4xl mx-auto">

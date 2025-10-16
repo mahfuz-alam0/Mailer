@@ -1,4 +1,4 @@
-import { ArrowLeft, Mail, Zap, Database, Shield, AlertTriangle, Clock } from 'lucide-react';
+import { Mail, Zap, Database, Shield, AlertTriangle, Clock } from 'lucide-react';
 
 interface TermsAndConditionsProps {
   onNavigate: (page: 'pricing' | 'refund' | 'terms') => void;
@@ -7,13 +7,6 @@ interface TermsAndConditionsProps {
 function TermsAndConditions({ onNavigate }: TermsAndConditionsProps) {
   return (
     <div className="relative w-full px-4 sm:px-6 lg:px-8 py-12 lg:py-16 max-w-5xl mx-auto">
-      <button
-        onClick={() => onNavigate('pricing')}
-        className="flex items-center text-blue-400 hover:text-blue-300 mb-8 transition-colors"
-      >
-        <ArrowLeft className="w-5 h-5 mr-2" />
-        Back to Pricing
-      </button>
 
       <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 lg:p-12">
         <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">Terms and Conditions</h1>
@@ -319,22 +312,6 @@ function TermsAndConditions({ onNavigate }: TermsAndConditionsProps) {
             </p>
           </section>
         </div>
-      </div>
-
-      <div className="mt-8 text-center">
-        <button
-          onClick={() => onNavigate('pricing')}
-          className="text-blue-400 hover:text-blue-300 underline"
-        >
-          Return to Pricing Page
-        </button>
-        <span className="text-slate-600 mx-3">|</span>
-        <button
-          onClick={() => onNavigate('refund')}
-          className="text-blue-400 hover:text-blue-300 underline"
-        >
-          View Refund Policy
-        </button>
       </div>
     </div>
   );
